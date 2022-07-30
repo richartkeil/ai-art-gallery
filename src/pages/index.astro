@@ -1,10 +1,41 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { getImage } from "@astrojs/image";
+
+const creations: {
+	image: astroHTML.JSX.ImgHTMLAttributes;
+	description: string;
+	source: string;
+}[] = [];
+const jsonFiles = await Astro.glob('../assets/images/*.json');
+const imageFiles = await Astro.glob('../assets/images/*.{jpg,png}');
+for (const json of jsonFiles) {
+	const image = imageFiles.find(f => f.default.src.includes(json.filename));
+	creations.push({
+		image: await getImage({ src: image!.default.src, format: 'webp', width: 1024, height: 1024 }),
+		description: json.description,
+		source: json.sourceUrl,
+	});
+}
+
 ---
 
 <Layout title="AI Art Gallery">
 	<main>
 		<h1>Welcome to the gallery.</h1>
+		{creations.map(creation => (
+		<div>
+			<p>{creation.description}</p>
+			<a href={creation.source}>Source</a>
+			<img src={creation.image.src} class="image" />
+		</div>
+		))}
 	</main>
 </Layout>
 
+<style>
+	.image {
+		width: 150px;
+		height: 150px;
+	}
+</style>

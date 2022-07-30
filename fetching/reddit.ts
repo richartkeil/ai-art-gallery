@@ -5,9 +5,8 @@ async function storeImages(url: string) {
   const response = await fetch(url);
   const html = await response.text();
   const document = new DOMParser().parseFromString(html, "text/html");
-  const links = document.querySelectorAll(
-    `div[data-test-id="post-content"] a`,
-  );
+  const links = document.querySelectorAll(`div[data-test-id="post-content"] a`);
+  const title = document.querySelector(`div[data-test-id="post-content"] h1`);
   for (const link of links) {
     const href = link.getAttribute("href");
     if (!href) continue;
@@ -21,7 +20,8 @@ async function storeImages(url: string) {
         id,
         filename: `${id}.${type}`,
         sourceUrl: url,
-        imageUrl: href
+        imageUrl: href,
+        description: title.textContent,
       });
       // If it is a preview url, we extract the image id and use the raw image cdn url:
     } else if (href.includes("https://preview.redd.it/")) {
@@ -35,7 +35,8 @@ async function storeImages(url: string) {
         id,
         filename: `${id}.${type}`,
         sourceUrl: url,
-        imageUrl: `https://i.redd.it/${redditId}.${type}`
+        imageUrl: `https://i.redd.it/${redditId}.${type}`,
+        description: title.textContent,
       });
     }
     console.log(`Stored ${href}`);
