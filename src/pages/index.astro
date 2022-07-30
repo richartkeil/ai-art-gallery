@@ -12,7 +12,7 @@ const imageFiles = await Astro.glob('../assets/images/*.{jpg,png}');
 for (const json of jsonFiles) {
 	const image = imageFiles.find(f => f.default.src.includes(json.filename));
 	creations.push({
-		image: await getImage({ src: image!.default.src, format: 'webp', width: 1024, height: 1024 }),
+		image: await getImage({ src: image!.default.src, format: 'webp', width: 512, height: 512 }),
 		description: json.description,
 		source: json.sourceUrl,
 	});
@@ -21,21 +21,19 @@ for (const json of jsonFiles) {
 ---
 
 <Layout title="AI Art Gallery">
+	<header class="p-4 sm:p-12 mt-4">
+		<h1 class="text-center text-4xl font-serif text-gray-800 dark:text-slate-200">An AI Art Gallery</h1>
+		<p class="m-auto w-full sm:w-96 text-center mt-4 text-gray-500 dark:text-slate-500">Creativity is seeing what others see and thinking what no one else ever thought. –
+			A.
+			Einstein</p>
+	</header>
 	<main>
-		<h1>Welcome to the gallery.</h1>
-		{creations.map(creation => (
-		<div>
-			<p>{creation.description}</p>
-			<a href={creation.source}>Source</a>
-			<img src={creation.image.src} class="image" />
+		<div class="p-4 sm:p-5 md:p-6 flex flex-wrap">
+			{creations.map(creation => (
+			<div class="w-full p-4 sm:w-1/2 sm:p-5 md:w-1/5 md:p-6">
+				<img src={creation.image.src} class="w-full rounded hover:shadow-xl transition-all hover:scale-105"/>
+			</div>
+			))}
 		</div>
-		))}
 	</main>
 </Layout>
-
-<style>
-	.image {
-		width: 150px;
-		height: 150px;
-	}
-</style>
