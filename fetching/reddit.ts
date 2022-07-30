@@ -5,7 +5,7 @@ async function storeImages(url: string) {
   const response = await fetch(url);
   const html = await response.text();
   const document = new DOMParser().parseFromString(html, "text/html");
-  const links = document.querySelectorAll(`div[data-test-id="post-content"] a`);
+  const links = document.querySelectorAll(`div[data-test-id="post-content"] a`).slice(0, 1);
   const title = document.querySelector(`div[data-test-id="post-content"] h1`);
   for (const link of links) {
     const href = link.getAttribute("href");
