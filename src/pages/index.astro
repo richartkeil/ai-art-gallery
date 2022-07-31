@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import { getImage } from "@astrojs/image";
 
 const creations: {
+	id: string;
 	image: astroHTML.JSX.ImgHTMLAttributes;
 	description: string;
 	source: string;
@@ -12,6 +13,7 @@ const imageFiles = await Astro.glob('../assets/images/*.{jpg,png}');
 for (const json of jsonFiles) {
 	const image = imageFiles.find(f => f.default.src.includes(json.filename));
 	creations.push({
+		id: json.id,
 		image: await getImage({ src: image!.default.src, format: 'webp', width: 512, height: 512 }),
 		description: json.description,
 		source: json.sourceUrl,
@@ -41,7 +43,10 @@ for (const json of jsonFiles) {
 		<div class="p-4 sm:p-5 md:p-6 flex flex-wrap">
 			{creations.map(creation => (
 			<div class="w-full p-4 sm:w-1/2 sm:p-5 md:w-1/5 md:p-6">
-				<img src={creation.image.src} class="w-full rounded hover:shadow-2xl transition-all hover:scale-125" />
+				<a href={creation.id}>
+					<img src={creation.image.src}
+						class="w-full rounded hover:shadow-2xl transition-all hover:scale-105" />
+				</a>
 			</div>
 			))}
 		</div>
