@@ -8,15 +8,16 @@ const creations: {
 	description: string;
 	source: string;
 }[] = [];
-const jsonFiles = await Astro.glob('../assets/images/*.json');
-const imageFiles = await Astro.glob('../assets/images/*.{jpg,png}');
-for (const json of jsonFiles) {
-	const image = imageFiles.find(f => f.default.src.includes(json.filename));
+
+const rawCreations = (await Astro.glob('../assets/creations/creations.json'))[0].default;
+const imageFiles = await Astro.glob('../assets/creations/images/*.webp');
+for (const creation of rawCreations.sort((a: any, b: any) => a.fetchedAt - b.fetchedAt)) {
+	const image = imageFiles.find(f => f.default.src.includes(creation.filename));
 	creations.push({
-		id: json.id,
+		id: creation.id,
 		image: await getImage({ src: image!.default.src, format: 'webp', width: 512, height: 512 }),
-		description: json.description,
-		source: json.sourceUrl,
+		description: creation.description,
+		source: creation.sourceUrl,
 	});
 }
 
