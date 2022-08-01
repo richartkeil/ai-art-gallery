@@ -11,7 +11,7 @@ const creations: {
 
 const rawCreations = (await Astro.glob('../assets/creations/creations.json'))[0].default;
 const imageFiles = await Astro.glob('../assets/creations/images/*.webp');
-for (const creation of rawCreations.sort((a: any, b: any) => a.fetchedAt - b.fetchedAt)) {
+for (const creation of rawCreations.sort((a: any, b: any) => b.fetchedAt - a.fetchedAt)) {
 	const image = imageFiles.find(f => f.default.src.includes(creation.filename));
 	creations.push({
 		id: creation.id,
@@ -43,7 +43,7 @@ for (const creation of rawCreations.sort((a: any, b: any) => a.fetchedAt - b.fet
 	<main>
 		<div class="p-4 sm:p-5 md:p-6 flex flex-wrap">
 			{creations.map(creation => (
-			<div class="w-full p-4 sm:w-1/2 sm:p-5 md:w-1/5 md:p-6">
+			<div class="w-full p-4 sm:w-1/2 sm:p-5 md:w-1/4 md:p-6">
 				<a href={creation.id}>
 					<img src={creation.image.src}
 						class="w-full rounded hover:shadow-2xl transition-all hover:scale-105" />
