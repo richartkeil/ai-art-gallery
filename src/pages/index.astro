@@ -1,10 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { getImage } from "@astrojs/image";
+import { Picture } from "astro-imagetools/components";
 
 const creations: {
 	id: string;
-	image: astroHTML.JSX.ImgHTMLAttributes;
+	image: string;
 	description: string;
 	source: string;
 }[] = [];
@@ -15,7 +15,7 @@ for (const creation of rawCreations.sort((a: any, b: any) => b.fetchedAt - a.fet
 	const image = imageFiles.find(f => f.default.src.includes(creation.filename));
 	creations.push({
 		id: creation.id,
-		image: await getImage({ src: image!.default.src, format: 'webp', width: 512, height: 512 }),
+		image: image!.default.src,
 		description: creation.description,
 		source: creation.sourceUrl,
 	});
@@ -45,8 +45,9 @@ for (const creation of rawCreations.sort((a: any, b: any) => b.fetchedAt - a.fet
 			{creations.map(creation => (
 			<div class="w-full p-4 sm:w-1/2 sm:p-5 md:w-1/4 md:p-6">
 				<a href={creation.id}>
-					<img src={creation.image.src}
-						class="w-full rounded hover:shadow-2xl transition-all hover:scale-105" />
+					<Picture src={creation.image} alt={creation.description} width={512} height={512} loading="lazy"
+						preload="webp" placeholder="dominantColor" attributes={{picture:
+						{class: "w-full overflow-hidden rounded hover:shadow-2xl transition-all hover:scale-105" } }} />
 				</a>
 			</div>
 			))}

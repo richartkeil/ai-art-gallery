@@ -1,9 +1,10 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 import image from "@astrojs/image";
-
 import tailwind from "@astrojs/tailwind";
+import { astroImageTools } from "astro-imagetools";
 
-// https://astro.build/config
+const integrations = [image(), tailwind(), astroImageTools];
+
 export default defineConfig({
-  integrations: [image(), tailwind()]
+  integrations,
 });

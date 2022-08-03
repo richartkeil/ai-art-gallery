@@ -15,6 +15,7 @@
     "astro": "^1.0.0-rc.3"
   },
   "dependencies": {
-    "@astrojs/deno": "^0.2.0"
+    "@astrojs/deno": "^0.2.0",
+    "astro-imagetools": "^0.6.10"
   }
 }
