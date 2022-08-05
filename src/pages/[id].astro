@@ -1,27 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Picture } from "astro-imagetools/components";
-
-const creations: {
-    id: string;
-    image: string;
-    description: string;
-    source: string;
-}[] = [];
-const rawCreations = (await Astro.glob('../assets/creations/creations.json'))[0].default;
-const imageFiles = await Astro.glob('../assets/creations/images/*.webp');
-for (const creation of rawCreations) {
-    const image = imageFiles.find(f => f.default.src.includes(creation.filename));
-    creations.push({
-        id: creation.id,
-        // ./src is required for imagetools to work when building
-        image: './src' + image!.default.src, 
-        description: creation.description,
-        source: creation.sourceUrl,
-    });
-}
+import { fetchCreations } from "../creations";
 
 const { id } = Astro.params;
+const creations = await fetchCreations(
+	await Astro.glob("../assets/creations/creations.json"),
+	await Astro.glob("../assets/creations/images/*.webp")
+);
 const creation = creations.find(c => c.id === id)!;
 
 export async function getStaticPaths() {
