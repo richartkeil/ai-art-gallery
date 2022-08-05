@@ -14,7 +14,8 @@ for (const creation of rawCreations) {
     const image = imageFiles.find(f => f.default.src.includes(creation.filename));
     creations.push({
         id: creation.id,
-        image: image!.default.src,
+        // ./src is required for imagetools to work when building
+        image: './src' + image!.default.src, 
         description: creation.description,
         source: creation.sourceUrl,
     });
