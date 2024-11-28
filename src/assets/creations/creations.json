@@ -1188,5 +1188,205 @@
     "description": "Leonardo enters the metaverse      ",
     "model": "dalle2",
     "fetchedAt": 1659471228046
+  },
+  {
+    "id": "c97e3ce7-4db6-4303-9f72-4cc2f7cd5b7d",
+    "originalFilename": "c97e3ce7-4db6-4303-9f72-4cc2f7cd5b7d.webp",
+    "filename": "c97e3ce7-4db6-4303-9f72-4cc2f7cd5b7d.webp",
+    "sourceUrl": "https://twitter.com/Dalle2Pics/status/1546674191491031040",
+    "imageUrl": "https://pbs.twimg.com/media/FXbj2nCWAAA9Z6X?format=jpg&name=medium",
+    "description": "",
+    "model": "dalle2",
+    "fetchedAt": 1659683842105
+  },
+  {
+    "id": "88a98b1a-398d-4dca-9ccc-a6d3bce120d6",
+    "originalFilename": "88a98b1a-398d-4dca-9ccc-a6d3bce120d6.webp",
+    "filename": "88a98b1a-398d-4dca-9ccc-a6d3bce120d6.webp",
+    "sourceUrl": "https://twitter.com/Dalle2Pics/status/1541976451196526592",
+    "imageUrl": "https://pbs.twimg.com/media/FWYzX7-X0AE2WTE?format=jpg&name=medium",
+    "description": "",
+    "model": "dalle2",
+    "fetchedAt": 1659683842108
+  },
+  {
+    "id": "b76f147a-2e52-4172-830b-f9df7015c3f0",
+    "originalFilename": "b76f147a-2e52-4172-830b-f9df7015c3f0.webp",
+    "filename": "b76f147a-2e52-4172-830b-f9df7015c3f0.webp",
+    "sourceUrl": "https://twitter.com/Dalle2Pics/status/1539101621208104965",
+    "imageUrl": "https://pbs.twimg.com/media/FVv8TiHXoAASuB3?format=jpg&name=medium",
+    "description": "",
+    "model": "dalle2",
+    "fetchedAt": 1659683842109
+  },
+  {
+    "id": "c4ccf4ad-fb1b-4bc6-ac89-535229a46ad9",
+    "originalFilename": "c4ccf4ad-fb1b-4bc6-ac89-535229a46ad9.webp",
+    "filename": "c4ccf4ad-fb1b-4bc6-ac89-535229a46ad9.webp",
+    "sourceUrl": "https://twitter.com/Dalle2AI/status/1551236684372754433",
+    "imageUrl": "https://pbs.twimg.com/media/FYcZixnXkAAQ9ZN?format=jpg&name=medium",
+    "description": "",
+    "model": "dalle2",
+    "fetchedAt": 1659683842110
+  },
+  {
+    "id": "a6bc80a8-91d5-4de2-a77e-7956bdaee527",
+    "originalFilename": "a6bc80a8-91d5-4de2-a77e-7956bdaee527.webp",
+    "filename": "a6bc80a8-91d5-4de2-a77e-7956bdaee527.webp",
+    "sourceUrl": "https://twitter.com/hot_town/status/1551229804984270848",
+    "imageUrl": "https://pbs.twimg.com/media/FYcTPUXXkAAJ65C?format=jpg&name=medium",
+    "description": "",
+    "model": "dalle2",
+    "fetchedAt": 1659683842111
+  },
+  {
+    "id": "38247b07-0cf1-442d-a287-051ebddefe94",
+    "originalFilename": "38247b07-0cf1-442d-a287-051ebddefe94.webp",
+    "filename": "38247b07-0cf1-442d-a287-051ebddefe94.webp",
+    "sourceUrl": "https://twitter.com/Dalle2AI/status/1551191412494016514",
+    "imageUrl": "https://pbs.twimg.com/media/FYbwXmZWIAEZIPL?format=jpg&name=medium",
+    "description": "",
+    "model": "dalle2",
+    "fetchedAt": 1659683842111
+  },
+  {
+    "id": "10f6900d-77fb-496f-bda9-8bbcfc7e7b71",
+    "originalFilename": "10f6900d-77fb-496f-bda9-8bbcfc7e7b71.webp",
+    "filename": "10f6900d-77fb-496f-bda9-8bbcfc7e7b71.webp",
+    "sourceUrl": "https://twitter.com/inatarius_photo/status/1554087347830022144/photo/1",
+    "imageUrl": "https://pbs.twimg.com/media/FZE6M73XgAUXaDa?format=jpg&name=large",
+    "description": "",
+    "model": "midjourney",
+    "fetchedAt": 1659683875494
+  },
+  {
+    "id": "67a96a6d-7c0e-455d-83df-25c1c12cca7a",
+    "originalFilename": "67a96a6d-7c0e-455d-83df-25c1c12cca7a.webp",
+    "filename": "67a96a6d-7c0e-455d-83df-25c1c12cca7a.webp",
+    "sourceUrl": "https://twitter.com/artofawanderer/status/1554007151441584128/photo/3",
+    "imageUrl": "https://pbs.twimg.com/media/FZDwfuiXkAIYBFw?format=jpg&name=4096x4096",
+    "description": "",
+    "model": "midjourney",
+    "fetchedAt": 1659683875496
+  },
+  {
+    "id": "73aa4f8d-1a49-49de-8e8e-1fe24c87d510",
+    "originalFilename": "73aa4f8d-1a49-49de-8e8e-1fe24c87d510.webp",
+    "filename": "73aa4f8d-1a49-49de-8e8e-1fe24c87d510.webp",
+    "sourceUrl": "https://twitter.com/ArcadeKodiak/status/1553962065915789322/photo/1",
+    "imageUrl": "https://pbs.twimg.com/media/FZDIQvWXEAE4OQE?format=jpg&name=large",
+    "description": "",
+    "model": "midjourney",
+    "fetchedAt": 1659683875497
+  },
+  {
+    "id": "8c91dda8-c8ce-4475-b1b7-9221cf3f8d90",
+    "originalFilename": "8c91dda8-c8ce-4475-b1b7-9221cf3f8d90.webp",
+    "filename": "8c91dda8-c8ce-4475-b1b7-9221cf3f8d90.webp",
+    "sourceUrl": "https://twitter.com/iamyoorets/status/1553778312182374404/photo/3",
+    "imageUrl": "https://pbs.twimg.com/media/FZAgawOWYAA8KTf?format=jpg&name=large",
+    "description": "",
+    "model": "midjourney",
+    "fetchedAt": 1659683875498
+  },
+  {
+    "id": "aca0d789-c6db-413f-88be-34d48fa5fe5d",
+    "originalFilename": "aca0d789-c6db-413f-88be-34d48fa5fe5d.webp",
+    "filename": "aca0d789-c6db-413f-88be-34d48fa5fe5d.webp",
+    "sourceUrl": "https://twitter.com/azizhgul/status/1553780572731883520/photo/1",
+    "imageUrl": "https://pbs.twimg.com/media/FZAi7UeXkAALWHF?format=jpg&name=large",
+    "description": "",
+    "model": "midjourney",
+    "fetchedAt": 1659683875498
+  },
+  {
+    "id": "957519ff-4f44-4489-9788-c5e66648805a",
+    "originalFilename": "957519ff-4f44-4489-9788-c5e66648805a.webp",
+    "filename": "957519ff-4f44-4489-9788-c5e66648805a.webp",
+    "sourceUrl": "https://twitter.com/BjornToftMadsen/status/1553786543638183936/photo/1",
+    "imageUrl": "https://pbs.twimg.com/media/FZAooCdWYAI71eE?format=jpg&name=medium",
+    "description": "",
+    "model": "midjourney",
+    "fetchedAt": 1659683875499
+  },
+  {
+    "id": "8f7b587b-f615-4af7-b188-b322fc1e8a3e",
+    "originalFilename": "8f7b587b-f615-4af7-b188-b322fc1e8a3e.webp",
+    "filename": "8f7b587b-f615-4af7-b188-b322fc1e8a3e.webp",
+    "sourceUrl": "https://twitter.com/generated_paint/status/1553734345587937285/photo/1",
+    "imageUrl": "https://pbs.twimg.com/media/FY_5Js2XwA0p9pt?format=jpg&name=large",
+    "description": "",
+    "model": "midjourney",
+    "fetchedAt": 1659683875499
+  },
+  {
+    "id": "0d10a511-0615-4e0f-a155-3733aa7ec76b",
+    "originalFilename": "0d10a511-0615-4e0f-a155-3733aa7ec76b.webp",
+    "filename": "0d10a511-0615-4e0f-a155-3733aa7ec76b.webp",
+    "sourceUrl": "https://twitter.com/ChekhovEugene/status/1553492572403896322/photo/1",
+    "imageUrl": "https://pbs.twimg.com/media/FY8c8fIXEAc2pNZ?format=jpg&name=large",
+    "description": "",
+    "model": "midjourney",
+    "fetchedAt": 1659683875500
+  },
+  {
+    "id": "18980478-14d2-42d0-ae92-64567f72faac",
+    "originalFilename": "18980478-14d2-42d0-ae92-64567f72faac.webp",
+    "filename": "18980478-14d2-42d0-ae92-64567f72faac.webp",
+    "sourceUrl": "https://twitter.com/Flahobino/status/1552671966825414656/photo/2",
+    "imageUrl": "https://pbs.twimg.com/media/FYwvYXZXwAEA0D6?format=jpg&name=large",
+    "description": "",
+    "model": "midjourney",
+    "fetchedAt": 1659683875500
+  },
+  {
+    "id": "346fb140-80b3-4af4-82ef-045d026a80f9",
+    "originalFilename": "346fb140-80b3-4af4-82ef-045d026a80f9.webp",
+    "filename": "346fb140-80b3-4af4-82ef-045d026a80f9.webp",
+    "sourceUrl": "https://twitter.com/m4rc_eth/status/1550133568315088896/photo/1",
+    "imageUrl": "https://pbs.twimg.com/media/FYMuEz9VQAAUVGF?format=jpg&name=medium",
+    "description": "",
+    "model": "midjourney",
+    "fetchedAt": 1659683875501
+  },
+  {
+    "id": "7abae58d-77b1-435e-ae3c-7fb78cb33f66",
+    "originalFilename": "7abae58d-77b1-435e-ae3c-7fb78cb33f66.webp",
+    "filename": "7abae58d-77b1-435e-ae3c-7fb78cb33f66.webp",
+    "sourceUrl": "https://twitter.com/Joeythemonste/status/1548730979195490309/photo/2",
+    "imageUrl": "https://pbs.twimg.com/media/FX4ynYOWYAM0GRs?format=jpg&name=large",
+    "description": "",
+    "model": "midjourney",
+    "fetchedAt": 1659683875501
+  },
+  {
+    "id": "7c211b46-995b-4fbf-8009-b17c6f5d49f2",
+    "originalFilename": "7c211b46-995b-4fbf-8009-b17c6f5d49f2.webp",
+    "filename": "7c211b46-995b-4fbf-8009-b17c6f5d49f2.webp",
+    "sourceUrl": "https://twitter.com/helloshade/status/1547678598173077504/photo/4",
+    "imageUrl": "https://pbs.twimg.com/media/FXp1ew9VUAMIb0U?format=jpg&name=medium",
+    "description": "",
+    "model": "midjourney",
+    "fetchedAt": 1659683875502
+  },
+  {
+    "id": "23d44e88-fc48-4471-ae8c-531b157eb9e6",
+    "originalFilename": "23d44e88-fc48-4471-ae8c-531b157eb9e6.webp",
+    "filename": "23d44e88-fc48-4471-ae8c-531b157eb9e6.webp",
+    "sourceUrl": "https://twitter.com/ClaysCourt/status/1554319484965605376/photo/1",
+    "imageUrl": "https://pbs.twimg.com/media/FZINVZGWYAAP5De?format=jpg&name=medium",
+    "description": "",
+    "model": "midjourney",
+    "fetchedAt": 1659683875502
+  },
+  {
+    "id": "0e3b6b71-0a24-46fd-8b25-c8a02d04810f",
+    "originalFilename": "0e3b6b71-0a24-46fd-8b25-c8a02d04810f.webp",
+    "filename": "0e3b6b71-0a24-46fd-8b25-c8a02d04810f.webp",
+    "sourceUrl": "https://twitter.com/ClaysCourt/status/1554378233273106432/photo/1",
+    "imageUrl": "https://pbs.twimg.com/media/FZJCxAHX0AIGXz-?format=jpg&name=medium",
+    "description": "",
+    "model": "midjourney",
+    "fetchedAt": 1659683875503
   }
 ]
